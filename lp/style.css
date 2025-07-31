@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav{
@@ -15,7 +16,11 @@ nav{
     gap: 20px;
     background-color: #ddd;
     height: 80px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+     rgba(0, 0, 0, 0.12) 0px -12px 30px,
+      rgba(0, 0, 0, 0.12) 0px 4px 6px,
+       rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 nav a{
@@ -34,12 +39,11 @@ nav a:hover{
 
 #s1 {
     min-height: 100vh;
-    padding-top: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    background-color: rgb(73, 73, 73);
+    background-color: rgb(162, 3, 3);
 }
 
 .wrap-img{
@@ -49,10 +53,10 @@ nav a:hover{
     justify-content: center;
     border-radius: 100%;
     overflow: hidden;
-    border: 6px solid rgb(155, 155, 155);
+    border: 6px solid rgb(61, 0, 0);
 }
 
-.img-s1{
+.img-s1{    
     width: 300px;
     height: auto;
     transition: all 200ms ease-in-out;
@@ -68,18 +72,131 @@ nav a:hover{
 
 #s2 {
     min-height: 100vh;
-    padding-top: 80px;
-    background-color: rgb(255, 251, 0);
+    background: url("./images/vava.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.card{
+        background-color: #dddddd82;
+        width: 400px;
+        height: 420px;
+        border-radius: 20px;
+        box-shadow: rgba(88, 1, 1, 0.806) 0px 5px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+        text-align: center;
+}
+
+.card:hover{
+    background-color: rgba(255, 255, 255, 0.869);
+    box-shadow: rgba(255, 255, 255, 0.724) 0px 5px 100px;
+    cursor: crosshair;
+}
+
+.card img{
+    border-radius: 100%;
+    background-color: white;
+    padding: 20px;
 }
 
 #s3 {
     min-height: 100vh;
     padding-top: 80px;
-    background-color: rgb(42, 165, 99);
+    background-color: rgb(162, 3, 3);
 }
 
 #s4 {
-    min-height: 100vh;
-    padding-top: 80px;
-    background-color: rgb(150, 44, 192);
+    min-height: 100vh;  
+    background-color: rgb(162, 3, 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3vh;
+}
+
+.formulario{
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 20px;
+    color: #ddd;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+     rgba(0, 0, 0, 0.12) 0px -12px 30px,
+      rgba(0, 0, 0, 0.12) 0px 4px 6px,
+       rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.formulario label{
+    margin-bottom: -6px;
+}
+
+.formulario input{
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+
+.formulario button{
+    padding: 10px;
+    border-radius: 8px;
+    opacity: 1;
+}
+
+.formulario button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ddd;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer img{
+    border-radius: 100%;
+    transition: all 500ms ease-in-out;
+}
+
+footer img:hover{
+    transform: rotate(300deg);
+    cursor: pointer;
+    box-shadow:  rgba(255, 255, 255, 0.724) 0px 5px 100px;
 }
