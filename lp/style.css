@@ -121,8 +121,24 @@ nav a:hover{
 
 #s3 {
     min-height: 100vh;
-    padding-top: 80px;
-    background-color: rgb(162, 3, 3);
+    background-color: rgb(156, 156, 156);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap-video{
+    width: 800px;
+    height: 500px;
+}
+
+.vd{
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+     rgba(0, 0, 0, 0.12) 0px -12px 30px,
+      rgba(0, 0, 0, 0.12) 0px 4px 6px,
+       rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 #s4 {
@@ -196,7 +212,7 @@ footer img{
 }
 
 footer img:hover{
-    transform: rotate(300deg);
+    transform: rotate(360deg) scale(1.5);
     cursor: pointer;
     box-shadow:  rgba(255, 255, 255, 0.724) 0px 5px 100px;
 }
